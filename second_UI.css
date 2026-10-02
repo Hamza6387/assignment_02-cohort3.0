@@ -1,0 +1,145 @@
+*{
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  
+  width: 100%;
+  height: 100vh;
+  /* overflow-y: hidden; */
+
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center; /* Centers all child sections */
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+.header img {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 16%;
+}
+
+.drinks{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  
+  justify-content: space-evenly;
+  width: 87%;
+  height: 60%;
+  top: 25%;
+  left:7%;
+  /* border: 2px solid white; */
+  
+}
+
+.drink-card{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  border: 2px solid orange;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 5px;
+  width: 250px;
+  height: 350px;
+  margin-top: 27px;
+  
+}
+.drink-card img{
+  width: 250px;
+  height: 220px;
+  object-fit: cover;   /* crop to fill box */
+  border-radius: 30px;
+  background-color: black;
+}
+.drink-card h2,p,h3{
+  margin: 10px;
+}
+
+hr{
+  background-color: orange;
+  border: 1px solid orange;
+  width: 10px;
+}
+.middle{
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+.middle img{
+     position: absolute;
+    width: 82%;
+    height: 60%;
+    top: 82%;
+    border: 2px solid rgb(5, 5, 5); 
+    padding: 5px;
+  
+}
+
+ #second{
+  position: absolute;
+  bottom: -46%;
+  border: none;
+  border-top: 2px solid orange;
+  width: 100%;
+}
+
+ .footer {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: auto; /* Pushes footer strictly to the bottom */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.Lo-first, .Lo-sec, .Lo-third {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Lo-sec ul {
+  display: flex;
+  list-style:disc;
+  
+  gap: 30px;
+  padding: 10px;
+}
+
+.Lo-first img {
+  width: 24px;
+  height: auto;
+}
+
+/* .footer .Lo-third img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+} */
+.Lo-first img{
+  width: 12px;
+  height: 10px
+}
+.footer .Lo-third img {
+  width: 30px;
+  height: 27px;
+
+}
+.footer{
+  position: absolute;
+  bottom: -59%;
+  padding-left: 15px;
+}

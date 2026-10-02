@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-width: 100vh;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.outer {
+  min-width: 100vh;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.inner-first {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  gap: 20px;
+  width: 50%;
+  background-color: #fefefe;
+  padding: 20px 10px 10px 20px;
+  margin: 0px;
+}
+.left-top-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.inner-first .nav {
+  display: inline-block;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 25px;
+
+  font-family: "Playfair Display", "Times New Roman", serif;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+/* 1. Style the capsule container */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 8px 16px; /* Breathing room inside the capsule */
+  border-radius: 50px; /* Creates the pill/capsule shape */
+  gap: 10px; /* Space between icon and text box */
+  width: fit-content;
+  position: absolute; /* Keeps it compact */
+  right: 45%;
+}
+
+/* 2. Style the icon inside the capsule */
+.search-icon {
+  font-size: 14px;
+  color: #666; /* Soft grey color for the icon */
+}
+
+/* 3. Strip away the input's default box and border */
+.search-input {
+  border: none; /* Removes the ugly default border box */
+  outline: none; /* Removes the blue click outline */
+  background: transparent; /* Blends with the grey capsule background */
+  font-family: inherit; /* Matches your page font */
+  font-size: 14px;
+  color: #333;
+}
+
+/* 4. Optional: Style the placeholder text */
+.search-input::placeholder {
+  color: #888;
+}
+
+.classification-wrapper {
+  position: absolute;
+  top: 25%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-style: italic;
+  font-size: 30px;
+  word-spacing: 2px;
+}
+.left-list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 115px;
+    margin-left: 170px;
+
+}
+.classification-list li{
+    margin-bottom: 20px;
+    color: #b43129;
+}
+.classification-list .label{
+    font-size: 18px;
+    font-weight: 600;
+color: #060809;
+}
+.classification-list .value{
+color: #302d2d;
+}
+ 
+.horizontal-line{
+    border: none;
+    height: 0.5px;
+    background-color: #888;
+    margin-bottom: 5px;    
+}
+
+.inner-second {
+  width: 50%;
+  background-color: #b43129;
+  padding: 20px 10px 5px 20px;
+  margin: 0px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  gap:40px;
+  position: relative;
+  
+}
+.navbar li{
+    padding-right: 30px;
+    cursor: pointer;
+    color: #fefefe;
+    font-weight: 300;
+
+}
+.right-h1{
+        color: #fefefe;
+    font-size: 25px;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.vertical-line {
+  border-left: 2px solid #fefefe; 
+  height: 100px;                  
+  margin: 0 20px;   
+  position: absolute;
+  bottom: 40%;
+  right: 25%;
+              
+}
+
+
+
+
+.Below-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #b43129;
+  padding: 20px 10px 5px 20px;
+  margin: 0px;
+}
+.personal-information {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start; /* Aligns text neatly next to the info icon block */
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.05); /* Subtle contrast box if needed */
+    padding: 20px 30px;
+    border-radius: 12px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.info-item i {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+    color: #ad683a;
+}
+
+.info-item h5 {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1.3;
+    margin: 0;
+    color: #fefefe;
+}
+
+.info-item h5 span {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+/* 5. Price Tag */
+.price {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #bf9742;
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+
+}
+
+/* 6. Interactive Toggle Switches */
+.toggles-container {
+     right: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 14%;
+}
+ .toggle-switch .slider-text{
+    color: #fefefe;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fefefe; /* This makes all text inside the label white */
+}
+
+/* Custom styling for standard checkboxes to mimic switches */
+.toggle-switch input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 36px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-switch input[type="checkbox"]:checked {
+    background-color: #ffffff;
+}
+
+.toggle-switch input[type="checkbox"]:checked::after {
+    transform: translateX(16px);
+    background-color: #b43129;
+}
+
+/* 7. Add to Collection Button */
+.add-btn {
+    background-color: #a87c31; /* Warm champagne/gold button color */
+    color: #cbbdb8;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 36px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+.add-btn:hover {
+    background-color: #80755e;
+    transform: translateY(-1px);
+}
+
+.add-btn:active {
+    transform: translateY(1px);
+}
+
+.beetle-poster img {
+  position: absolute;
+  left: 39.5%;
+  top: 12%;
+}

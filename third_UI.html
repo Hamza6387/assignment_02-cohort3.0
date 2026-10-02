@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third UI</title>
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="third_UI.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <!-- Left Side (White Section) -->
+      <div class="inner-first">
+        <div class="left-top-bar">
+          <h2 class="nav">INSECT</h2>
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input
+              type="text"
+              placeholder="Search everything..."
+              class="search-input"
+            />
+          </div>
+        </div>
+
+        <div class="left-content-wrapper">
+          <div class="classification-wrapper">
+            
+            <h1 class="classification-title">Classification</h1>
+          </div>
+          <div class="left-list">
+            <ul class="classification-list">
+              <li>
+                <div class="label">Class:</div>
+                <div class="value">Insecta</div>
+              </li>
+              <hr class="horizontal-line">
+              <li>
+                <div class="label">Order:</div>
+                <div class="value">Coleoptera</div>
+              </li>
+              <hr class="horizontal-line">
+              <li>
+                <div class="label">Family:</div>
+                <div class="value">Cerambycidae</div>
+              </li>
+              <hr class="horizontal-line">
+              <li>
+                <div class="label">Sub-Family:</div>
+                <div class="value">Cerambycinae</div>
+              </li>
+              <hr class="horizontal-line">
+              <li>
+                <div class="label">Tribe:</div>
+                <div class="value">Callichromatini</div>
+              </li>
+              <hr class="horizontal-line">
+              <li>
+                <div class="label">Genus:</div>
+                <div class="value">Pachyteria</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side (Red Section) -->
+      <div class="inner-second">
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About</li>
+              <li>Gallery</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="Below-navbar">
+          <div class="right-h1">
+            <h1>
+              Pachyteria
+              <br />
+              <span>equestris</span>
+            </h1>
+          </div>
+
+          <!-- Personal / Specimen Information Grid -->
+           <div class="vertical-line"></div>
+          <div class="personal-information">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <h5 class="in-heading">Locality: <br /><span>Malaysia</span></h5>
+            </div> 
+            <div class="info-item">
+              <i class="fa-solid fa-mars"></i>
+              <h5>Sex: <br/><span>Male</span></h5>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-ruler-vertical"></i>
+              <h5>Size: <br /><span>32mm</span></h5>
+            </div>
+          </div>
+
+          <div class="price">$5.44</div>
+
+          <!-- Interactive Toggles -->
+          <div class="toggles-container">
+            <label class="toggle-switch">
+              <input type="checkbox" />
+              <span class="slider-text">View detailed antennae</span>
+            </label>
+            <label class="toggle-switch">
+              <input type="checkbox" />
+              <span class="slider-text">View underside</span>
+            </label>
+          </div>
+
+          <button type="submit" class="add-btn">Add to collection</button>
+        </div>
+      </div>
+      <!-- Floating Center Image (Overlays both halves) -->
+      <div class="beetle-poster">
+        <img src="./beetle.png" alt="Beetle specimen" />
+      </div>
+    </div>
+  </body>
+</html>
